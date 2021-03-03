@@ -1,12 +1,12 @@
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import React from "react";
 import "./App.css";
+import { Header } from "./components/Header";
 
 function App() {
   return (
     <Router>
       <div className="App">
-        <h1>hello</h1>
         <Switch>
           <Route path="/checkout">
             <h1>Hello Checkout</h1>
@@ -16,6 +16,7 @@ function App() {
           </Route>
           {/* Default Route */}
           <Route path="/">
+            <Header />
             <h1>Hello home</h1>
           </Route>
         </Switch>
